@@ -40,14 +40,18 @@ public class LevelEditorScene extends Scene {
     @Override
     public void update(float dt) {
         if (KeyListener.isKeyPressed(GLFW_KEY_RIGHT)) {
-            camera.position.x += 100f * dt;
+            camera.position.x += 200f * dt;
         } else if (KeyListener.isKeyPressed(GLFW_KEY_LEFT)) {
-            camera.position.x -= 100f * dt;
+            camera.position.x -= 200f * dt;
         }
         if (KeyListener.isKeyPressed(GLFW_KEY_UP)) {
-            camera.position.y += 100f * dt;
+            camera.position.y += 200f * dt;
         } else if (KeyListener.isKeyPressed(GLFW_KEY_DOWN)) {
-            camera.position.y -= 100f * dt;
+            camera.position.y -= 200f * dt;
+        }
+        if (KeyListener.isKeyPressed(GLFW_KEY_H)) {
+            camera.position.y = 0f;
+            camera.position.x = 0f;
         }
 
         for (GameObject go : this.gameObjects) {
