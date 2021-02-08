@@ -26,9 +26,9 @@ public class Window {
         this.height = 1080;
         this.title = "PowerPuffin";
 
-        this.r = 0;
-        this.g = 0;
-        this.b = 0;
+        this.r = 0.4f;
+        this.g = 0.2f;
+        this.b = 0.1f;
         this.a = 1;
     }
 
